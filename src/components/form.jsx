@@ -37,12 +37,12 @@ return (
     <>
      <nav className='header'>
                 <section className='logo'>
-                    <img src={require('../../images/instagram.png')} alt='logo' />
+                    <img src={require('../images/instagram.png')} alt='logo' />
                         <span>INSTACLONE</span>
                 </section>
                 <section className="camera-icon">
                 <button className="goToAddPost" onClick={AddPost}>
-                    <img src={require('../../images/camera.png')} alt='camera' />
+                    <img src={require('../images/camera.png')} alt='camera' />
                 </button>
                 </section>
             </nav>

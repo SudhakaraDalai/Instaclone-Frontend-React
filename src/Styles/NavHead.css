@@ -1,34 +1,30 @@
-.Nav {
-  position: sticky;
-  background-color: #ffffff;
-  top: 0;
+.header{
   display: flex;
-  width: 100%;
-  border-bottom: grey solid 2px;
-  justify-content: space-between;
-  z-index: 20px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 5px;
 }
-
-.logo {
+.logo{
   display: flex;
-  margin-left: 10%;
-  color: darkgreen;
-  font-size:x-large;
-  font-family: "Times New Roman", Times, serif;
+  align-items: center;
 }
-
-.logo img {
-  width: 5%;
-}
-
-.Cam {
+.logo img{
   width: 40px;
-  margin-right: 10%;
-  cursor: pointer;
 }
 
-.Camicon{
-  display: flex;
-  margin-right: 10%;
-  margin-top: 1%;
+.logo span{
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 24px;
+  color: rgb(0, 204, 255);
+}
+
+.camera-icon{
+  align-self: center;
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.camera-icon img{
+  width: 50px;
 }

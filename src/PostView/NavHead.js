@@ -4,9 +4,16 @@ import { Link } from "react-router-dom";
 
 export default function NavHead(){
     return(
-        <div className="Nav">
-            <p className="logo"><img src={require('../Svg/circle-oval-svgrepo-com.svg').default} alt=""/>Instaclone</p>
-            <div className="Camicon"><Link to = "/uploadview" ><img className="Cam" src={require('../Svg/camera-svgrepo-com.svg').default} alt=""/></Link></div>
-        </div>
+        <nav className='header'>
+        <section className='logo'>
+            <img src={require('../Svg/instagram.png')} alt='logo' />
+                <span>INSTACLONE</span>
+        </section>
+        <section className="camera-icon">
+        <Link to = "/uploadview" >
+            <img src={require('../Svg/camera.png')} alt='camera' />
+        </Link>
+        </section>
+    </nav>
     )
 }

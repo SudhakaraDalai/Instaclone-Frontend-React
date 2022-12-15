@@ -1,22 +1,29 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import landingImage from "../Images/Home.jpg"
 import "../Styles/landingPage.css";
 
 export default function Landingpage() {
   return (
-    <div className="LandingPage">
-      <div className="Img">
-        <img src={require("../Images/Home.jpg")} alt="1" />
-      </div>
+    <div className="landing">
+          <div className="landing-image">
+            <img src={landingImage} alt="landing"/>
+          </div>
 
-      <div className="Title">
-        <div className="title">
-          <h1>10x Team04</h1>
-        </div>
-        <Link to="/postview">
-          <div className="button">Enter</div>
-        </Link>
+          <div className="landing-actions">
+              <div className="landing-text">10x Team 04</div>
+              <Link to="/postview">
+                  <div className="forward">
+
+                    <button className="button">Enter</button>
+                    
+                  </div>
+              </Link>
+                    
+                   
+          </div>
       </div>
-    </div>
   );
 }
+
+

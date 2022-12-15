@@ -24,7 +24,7 @@ export default function Post() {
           <p className="Location">{user.location}</p>
         </div>
         <div className="Menu">
-          <img src={require("../Svg/menu-svgrepo-com.svg").default} alt="" />
+        <img src={require("../Svg/menu-svgrepo-com.svg").default} alt="" />
         </div>
       </div>
       <div className="Image">

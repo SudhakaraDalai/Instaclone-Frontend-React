@@ -21,7 +21,7 @@ function AddPost(){
     Post.append('location', location)
     Post.append('description', description)
     Post.append('date', new Date().getDate())
-    axios.post('https://sudhakar-instaclone-api.onrender.com', Post)
+    axios.post('', Post)
     .then(function (response) {
         console.log(response);
         alert('successful');

@@ -8,14 +8,14 @@ const PostView = () =>{
     const [posts,setPosts] = useState([]);
 
     useEffect(()=>{
-        fetch("http://localhost:3004/user").then((res)=>res.json()).then((data)=>{
+        fetch("http://localhost:9000/user").then((res)=>res.json()).then((data)=>{
             setPosts(data);
         }).catch((err)=>{
             if(err){
                 console.log(err)
             }
         });
-        axios.get('https://sudhakar-instaclone-api.onrender.com')
+        axios.get('')
         .then(function (response) {
             setPosts(response.data.reverse());
             console.log(response);

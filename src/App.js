@@ -1,21 +1,18 @@
-
-import './App.css';
-import {BrowserRouter,Routes,Route} from "react-router-dom";
-import Landing from './components/landing-page/landing-page';
-import PostView from "./components/post-view/post-view";
-import AddPost from './components/form';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Landingpage from "./LandingPage/landing_page";
+import Postview from "./PostView/postview";
+import Uploadview from "./Uploadview/Uploadview";
 
 function App() {
   return (
-   <>
-      <BrowserRouter>
+    <div className="wrapper">
       <Routes>
-        <Route path='/' element={<Landing />} />
-        <Route path='/post-view' element={<PostView />} />
-        <Route path='/src/components/form.jsx' element={<AddPost/>}/>
+        <Route path="/" element={<Landingpage />} />
+        <Route path="/postview" element={<Postview />} />
+        <Route path= "/uploadview" element ={<Uploadview />}/>
       </Routes>
-      </BrowserRouter>
-   </>
+    </div>
   );
 }
 
